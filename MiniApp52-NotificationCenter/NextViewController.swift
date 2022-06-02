@@ -14,7 +14,7 @@ class NextViewController: UIViewController {
     }
 
     @IBAction private func didTapButton(_ sender: Any) {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload"), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "plus"), object: nil)
     }
 
 }

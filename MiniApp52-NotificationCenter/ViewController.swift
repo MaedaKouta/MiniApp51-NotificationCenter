@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         numberTextField.text = String(number)
-        NotificationCenter.default.addObserver(self, selector: #selector(loadMenu), name: NSNotification.Name(rawValue: "reload"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(plus), name: NSNotification.Name(rawValue: "plus"), object: nil)
     }
 
-    @objc private func loadMenu() {
+    @objc private func plus() {
         //self.tableView.reloadData()
         number += 1
         numberTextField.text = String(number)
